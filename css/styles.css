@@ -1,7 +1,6 @@
 :root {
   --primary-text-color: #212121;
   --accent-color: red;
-  --bubluk-color: rgba(115, 255, 0, 0.802);
 }
 
 .page {
@@ -16,23 +15,28 @@
   letter-spacing: 0.03em;
   color: #2196f3;
 }
+.accent {
+  color: #000;
+}
 .list {
   list-style: none;
   text-decoration: none;
 }
 
-.header-link {
+.header-nav .link {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: #212121;
 }
-.header-link:hover,
-.header-link:focus {
+.header-nav .link:hover,
+.header-nav .link:focus {
   color: #2196f3;
 }
-
+.header-nav .link.current {
+  color: #2196f3;
+}
 .header-mail {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -58,14 +62,15 @@
   text-align: center;
   color: #ffffff;
 }
-.header-btn {
+.button {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
   text-align: center;
-  color: #fff;
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 /* секція3 особливості */
@@ -84,4 +89,73 @@
   line-height: 1.71429;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+/* секція 4 чим ми займаїмось */
+.section-heading {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+}
+
+/* секція 5 наша команда */
+.section-headline {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+}
+.name {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+.work {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+
+  color: #757575;
+}
+
+/* секція 6 підвал */
+.footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+.address {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+.address-mail {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.address-tel {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71429;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
 }
