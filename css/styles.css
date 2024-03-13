@@ -1,161 +1,170 @@
 :root {
-  --primary-text-color: #212121;
-  --accent-color: red;
+  /* шрифти */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* колір текста */
+  --primary-color: #212121;
+  --accent-color: #2196f3;
+  --white-col: #ffffff;
+  --gray-col: #757575;
 }
 
-.page {
-  background: #fff;
+body {
+  font-family: var(--main-font);
+  background-color: var(--white-col);
+  letter-spacing: 0.03em;
+  color: var(--primary-color);
 }
 
-/* секція heder навігація*/
+/*==================================
+ секція heder навігація ,логотип*/
+
 .header-logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
-  letter-spacing: 0.03em;
-  color: #2196f3;
+
+  color: var(--accent-color);
+  text-decoration: none;
 }
 .accent {
   color: #000;
 }
-.list {
+
+/* навігація */
+.link {
   list-style: none;
   text-decoration: none;
 }
 
-.header-nav .link {
-  font-family: 'Roboto', sans-serif;
+.link {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
-  color: #212121;
 }
-.header-nav .link:hover,
-.header-nav .link:focus {
-  color: #2196f3;
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
 }
-.header-nav .link.current {
-  color: #2196f3;
+.link.current {
+  color: var(--accent-color);
 }
 .header-mail {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .header-tel {
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--gray-col);
 }
-/* секція герой */
+
+/*===========================
+ секція герой */
 .header-title {
-  font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36364;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
+  color: var(--white-col);
 }
 .button {
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
   text-align: center;
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--white-col);
+  background-color: var(--accent-color);
 }
 
 /* секція3 особливості */
 .section-title {
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 14px;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
 }
 .section-text {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71429;
-  letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--gray-col);
 }
 
 /* секція 4 чим ми займаїмось */
 .section-heading {
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 36px;
-  letter-spacing: 0.03em;
   text-align: center;
-  color: #212121;
 }
 
 /* секція 5 наша команда */
 .section-headline {
-  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 36px;
-  letter-spacing: 0.03em;
   text-align: center;
-  color: #212121;
 }
 .name {
+  font-weight: 500;
+  font-size: 16px;
+}
+.work {
+  font-size: 16px;
+  color: var(--gray-col);
+}
+
+/*===================================
+ секція 6 підвал */
+.footer-logo {
+  font-family: var(--secondary-font);
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.address {
+  font-size: 14px;
+  line-height: 1.71429;
+  color: var(--white-col);
+}
+.address-mail,
+.address-tel {
+  font-size: 14px;
+  line-height: 1.71429;
+  color: rgba(255, 255, 255, 0.6);
+}
+/* ==================================================
+  --portfolio--
+ */
+.btn-all {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  letter-spacing: 0.03em;
-
-  color: #212121;
+  line-height: 1.625;
+  color: var(--white-col);
+  background-color: var(--accent-color);
 }
-.work {
+.btn {
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
-  letter-spacing: 0.03em;
-
-  color: #757575;
+  line-height: 1.625;
 }
 
-/* секція 6 підвал */
-.footer-logo {
-  font-family: 'Raleway', sans-serif;
+/* секція проекти */
+.proect-title {
   font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-  color: #2196f3;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
-.address {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71429;
-  letter-spacing: 0.03em;
-  color: #fff;
-}
-.address-mail {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71429;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-}
-.address-tel {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71429;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+.proect-txt {
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--gray-col);
 }
