@@ -65,6 +65,9 @@ body {
 
 /*===========================
  секція герой */
+.section-hero {
+  background: #2f303a;
+}
 .header-title {
   font-weight: 900;
   font-size: 44px;
@@ -74,17 +77,20 @@ body {
   text-align: center;
   color: var(--white-col);
 }
-.button {
+.main-btn {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  text-align: center;
+
   color: var(--white-col);
   background-color: var(--accent-color);
 }
 
-/* секція3 особливості */
+/* секція 3 features особливості */
+.features {
+  list-style: none;
+}
 .section-title {
   font-weight: 700;
   font-size: 14px;
@@ -104,6 +110,9 @@ body {
 }
 
 /* секція 5 наша команда */
+.team {
+  background: #f5f4fa;
+}
 .section-headline {
   font-weight: 700;
   font-size: 36px;
@@ -112,20 +121,29 @@ body {
 .name {
   font-weight: 500;
   font-size: 16px;
+  text-align: center;
 }
 .work {
   font-size: 16px;
   color: var(--gray-col);
+  text-align: center;
 }
 
 /*===================================
  секція 6 підвал */
+.footer {
+  width: 1600px;
+  height: 252px;
+  background: #2f303a;
+}
 .footer-logo {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   color: var(--accent-color);
-  text-decoration: none;
+}
+.footer-studio {
+  color: var(--white-col);
 }
 .address {
   font-size: 14px;
