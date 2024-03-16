@@ -85,6 +85,7 @@ body {
 
   color: var(--white-col);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 
 /* секція 3 features особливості */
@@ -113,6 +114,9 @@ body {
 .team {
   background: #f5f4fa;
 }
+.our-team {
+  list-style: none;
+}
 .section-headline {
   font-weight: 700;
   font-size: 36px;
@@ -131,7 +135,7 @@ body {
 
 /*===================================
  секція 6 підвал */
-.footer {
+.footer-main {
   width: 1600px;
   height: 252px;
   background: #2f303a;
@@ -141,6 +145,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   color: var(--accent-color);
+  text-decoration: none;
 }
 .footer-studio {
   color: var(--white-col);
@@ -156,22 +161,40 @@ body {
   line-height: 1.71429;
   color: rgba(255, 255, 255, 0.6);
 }
+
+.footer:hover {
+  color: #ffffff;
+}
+.footer {
+  list-style: none;
+  text-decoration: none;
+}
+
 /* ==================================================
   --portfolio--
  */
-.btn-all {
+.btn-nav {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
   color: var(--white-col);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
 .btn {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
+  cursor: pointer;
+}
+.nav:hover {
+  background-color: var(--accent-color);
+}
+.btn-projects,
+.projects {
+  list-style: none;
 }
 
 /* секція проекти */
