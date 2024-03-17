@@ -33,15 +33,13 @@ body {
 }
 
 /* навігація */
-.link {
-  list-style: none;
-  text-decoration: none;
-}
 
-.link {
+.header-nav {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
+  color: var(--primary-color);
+  text-decoration: none;
 }
 .link:hover,
 .link:focus {
@@ -50,23 +48,24 @@ body {
 .link.current {
   color: var(--accent-color);
 }
-.header-mail {
-  font-weight: 500;
-  font-size: 14px;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
-}
-.header-tel {
+
+.header-kontact {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
   color: var(--gray-col);
+  text-decoration: none;
+}
+.header-kontact,
+.header-nav {
+  list-style: none;
 }
 
 /*===========================
  секція герой */
 .section-hero {
   background: #2f303a;
+  text-align: center;
 }
 .header-title {
   font-weight: 900;
@@ -109,6 +108,9 @@ body {
   font-size: 36px;
   text-align: center;
 }
+.ourwork {
+  list-style: none;
+}
 
 /* секція 5 наша команда */
 .team {
@@ -136,8 +138,6 @@ body {
 /*===================================
  секція 6 підвал */
 .footer-main {
-  width: 1600px;
-  height: 252px;
   background: #2f303a;
 }
 .footer-logo {
@@ -157,6 +157,8 @@ body {
 }
 .address-mail,
 .address-tel {
+  font-family: var(--main-font);
+  font-style: normal;
   font-size: 14px;
   line-height: 1.71429;
   color: rgba(255, 255, 255, 0.6);
@@ -192,10 +194,10 @@ body {
 }
 .nav:hover,
 .nav:focus {
+  color: var(--white-col);
   background-color: var(--accent-color);
 }
-.btn-projects,
-.projects {
+.btn-projects {
   list-style: none;
 }
 
@@ -205,9 +207,14 @@ body {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--primary-color);
 }
 .proect-txt {
   font-size: 16px;
   line-height: 1.875;
   color: var(--gray-col);
+}
+.projects {
+  list-style: none;
+  text-decoration: none;
 }
